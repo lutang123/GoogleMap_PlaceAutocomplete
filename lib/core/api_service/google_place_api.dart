@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:place_search_and_map/core/data_models/lat_lng.dart';
 import 'package:place_search_and_map/core/data_models/suggestion.dart';
 
-import '../api_key.dart';
+import '../api_keys.dart';
 
 class PlaceGoogleApiService {
   static const baseUrl =
