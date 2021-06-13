@@ -63,3 +63,6 @@ app.*.map.json
 # dotenv environment variables file
 .env
 .env.test
+
+# api keys
+/lib/core/api_keys.dart
