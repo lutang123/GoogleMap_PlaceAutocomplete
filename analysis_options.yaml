@@ -10,4 +10,5 @@ linter:
   rules:
     # Util classes are awesome!
     avoid_classes_with_only_static_members: false
+    sort_pub_dependencies: false
 

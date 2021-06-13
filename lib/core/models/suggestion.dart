@@ -4,10 +4,10 @@ class Suggestion {
 
   const Suggestion({required this.placeId, required this.description});
 
-  factory Suggestion.fromMap(Map<String, dynamic> map) {
+  factory Suggestion.fromMap(Map<String, dynamic> parsedJson) {
     return Suggestion(
-      placeId: map['place_id'] as String,
-      description: map['description'] as String,
+      placeId: parsedJson['place_id'] as String,
+      description: parsedJson['description'] as String,
     );
   }
 

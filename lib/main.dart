@@ -1,4 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:place_search_and_map/ui/screens/home_screen/home_screen.dart';
+
+//https://medium.com/comerge/location-search-autocomplete-in-flutter-84f155d44721
+//https://www.youtube.com/watch?v=sL74UNLssV8
+//https://stackoverflow.com/questions/55870508/how-to-create-a-simple-google-maps-address-search-with-autocomplete-in-flutter-a/55877236
+
+//https://developers.google.com/maps/documentation
+//https://developers.google.com/maps/documentation/places/web-service/overview
 
 void main() {
   runApp(MyApp());
@@ -13,41 +21,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Place Search and Map Demo'),
+      home: const HomeScreen(title: 'Place Search and Map Demo'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
 
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-          ],
-        ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
-  }
-}

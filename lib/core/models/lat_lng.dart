@@ -1,12 +1,12 @@
 // temporary model to hold data
-class LatLng {
+class PlaceLatLng {
   final double lat;
   final double lng;
 
-  LatLng({required this.lat, required this.lng});
+  PlaceLatLng({required this.lat, required this.lng});
 
-  factory LatLng.fromJson(Map<String, dynamic> parsedJson) {
-    return LatLng(
+  factory PlaceLatLng.fromJson(Map<String, dynamic> parsedJson) {
+    return PlaceLatLng(
       lat: parsedJson['lat'] as double,
       lng: parsedJson['lng'] as double,
     );
