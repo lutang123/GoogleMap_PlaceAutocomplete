@@ -1,0 +1,13 @@
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  exclude: [build/**]
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+linter:
+  rules:
+    # Util classes are awesome!
+    avoid_classes_with_only_static_members: false
+
