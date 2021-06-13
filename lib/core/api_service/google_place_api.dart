@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:place_search_and_map/core/data_models/lat_lng.dart';
 import 'package:place_search_and_map/core/data_models/suggestion.dart';
 
-import '../api_keys.dart';
+import '../api_key.dart';
 
 class PlaceGoogleApiService {
   static const baseUrl =
@@ -29,8 +29,9 @@ class PlaceGoogleApiService {
         final predictionsJson = convertedJson['predictions'] as List;
 
         return predictionsJson
-            .map((dynamic p) =>
-            Suggestion(placeId: p['place_id'] as String, description: p['description'] as String))
+            .map((dynamic p) => Suggestion(
+                placeId: p['place_id'] as String,
+                description: p['description'] as String))
             .toList();
         // return predictionsJson
         //     .map((dynamic place) =>
