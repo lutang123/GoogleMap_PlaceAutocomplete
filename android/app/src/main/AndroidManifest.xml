@@ -27,7 +27,7 @@
               android:name="io.flutter.embedding.android.SplashScreenDrawable"
               android:resource="@drawable/launch_background"
               />
-            <!-- API Keys -->
+            <!-- Map API Keys -->
             <meta-data android:name="com.google.android.geo.API_KEY"
                 android:value="${mapsApiKey}"/>
 
