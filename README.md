@@ -1,4 +1,4 @@
-# place_search_and_map
+# GoogleMap_PlaceAutocomplete
 
 A new Flutter project.
 
